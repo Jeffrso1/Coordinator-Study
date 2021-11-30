@@ -19,7 +19,7 @@ protocol CoordinatorProtocol: AnyObject {
     
     func finish()
     
-    func childDidFinish(_ child: CoordinatorProtocol)
+    func childDidFinish(_ coordinator: CoordinatorProtocol)
     
 }
 extension CoordinatorProtocol {
@@ -29,11 +29,11 @@ extension CoordinatorProtocol {
         parent.childDidFinish(self)
     }
     
-    func childDidFinish(_ child: CoordinatorProtocol) {
+    func childDidFinish(_ coordinator: CoordinatorProtocol) {
         guard var childCoordinators = childCoordinators else { return }
         
-        for (index, coordinator) in childCoordinators.enumerated() {
-            if coordinator === child {
+        for (index, child) in childCoordinators.enumerated() {
+            if child === coordinator {
                 childCoordinators.remove(at: index)
                 break
             }

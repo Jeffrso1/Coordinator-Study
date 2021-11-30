@@ -9,7 +9,9 @@ import UIKit
 
 class MainCoordinator: CoordinatorProtocol {
     
-    var childCoordinators: [CoordinatorProtocol]?
+    weak var parent: CoordinatorProtocol?
+    
+    var childCoordinators: [CoordinatorProtocol]? = []
     
     var navigationController: UINavigationController
     
@@ -26,13 +28,14 @@ class MainCoordinator: CoordinatorProtocol {
     
     // MARK: - Controller Presentation
     // Por essa função ser idêntica à anterior, acho que poderíamos usar Swift Generics aqui.
-    func controllerNumberOne() {
-        let vc = ViewControllerNumberOne.instantiate()
-        vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
+    func createControllerNumberOne() {
+        let controllerOneCoordinator = ControllerOneCoordinator(navigationController: navigationController)
+        childCoordinators?.append(controllerOneCoordinator)
+        controllerOneCoordinator.parent = self
+        controllerOneCoordinator.start()
     }
     
-    func controllerNumberTwo() {
+    func createControllerNumberTwo() {
         let vc = ViewControllerNumberTwo()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)

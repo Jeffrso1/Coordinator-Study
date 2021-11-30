@@ -18,6 +18,8 @@
 		71CD4BC1275141070040187B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BC0275141070040187B /* MainCoordinator.swift */; };
 		71CD4BC5275156180040187B /* ViewControllerNumberTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BC4275156180040187B /* ViewControllerNumberTwo.swift */; };
 		71CD4BC72751577B0040187B /* ViewControllerNumberOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BC62751577B0040187B /* ViewControllerNumberOne.swift */; };
+		71CD4BCE27566F8B0040187B /* ControllerOneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BCD27566F8B0040187B /* ControllerOneCoordinator.swift */; };
+		71CD4BD027566F950040187B /* ControllerTwoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BCF27566F950040187B /* ControllerTwoCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		71CD4BC0275141070040187B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		71CD4BC4275156180040187B /* ViewControllerNumberTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNumberTwo.swift; sourceTree = "<group>"; };
 		71CD4BC62751577B0040187B /* ViewControllerNumberOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNumberOne.swift; sourceTree = "<group>"; };
+		71CD4BCD27566F8B0040187B /* ControllerOneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerOneCoordinator.swift; sourceTree = "<group>"; };
+		71CD4BCF27566F950040187B /* ControllerTwoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerTwoCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +72,7 @@
 			children = (
 				71CD4BA6275137190040187B /* AppDelegate.swift */,
 				71CD4BA8275137190040187B /* SceneDelegate.swift */,
-				71CD4BAA275137190040187B /* ViewController.swift */,
-				71CD4BC4275156180040187B /* ViewControllerNumberTwo.swift */,
-				71CD4BC62751577B0040187B /* ViewControllerNumberOne.swift */,
+				71CD4BCA27566F460040187B /* Controller */,
 				71CD4BBD27513C8C0040187B /* Storyboarded */,
 				71CD4BBA2751375D0040187B /* Coordinator */,
 				71CD4BAC275137190040187B /* Main.storyboard */,
@@ -96,6 +98,34 @@
 				71CD4BBE27513C980040187B /* Storyboarded.swift */,
 			);
 			path = Storyboarded;
+			sourceTree = "<group>";
+		};
+		71CD4BCA27566F460040187B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71CD4BAA275137190040187B /* ViewController.swift */,
+				71CD4BCB27566F600040187B /* ControllerOne */,
+				71CD4BCC27566F6E0040187B /* ControllerTwo */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		71CD4BCB27566F600040187B /* ControllerOne */ = {
+			isa = PBXGroup;
+			children = (
+				71CD4BC62751577B0040187B /* ViewControllerNumberOne.swift */,
+				71CD4BCD27566F8B0040187B /* ControllerOneCoordinator.swift */,
+			);
+			path = ControllerOne;
+			sourceTree = "<group>";
+		};
+		71CD4BCC27566F6E0040187B /* ControllerTwo */ = {
+			isa = PBXGroup;
+			children = (
+				71CD4BC4275156180040187B /* ViewControllerNumberTwo.swift */,
+				71CD4BCF27566F950040187B /* ControllerTwoCoordinator.swift */,
+			);
+			path = ControllerTwo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71CD4BBC275137720040187B /* CoordinatorProtocol.swift in Sources */,
+				71CD4BCE27566F8B0040187B /* ControllerOneCoordinator.swift in Sources */,
 				71CD4BC1275141070040187B /* MainCoordinator.swift in Sources */,
 				71CD4BC5275156180040187B /* ViewControllerNumberTwo.swift in Sources */,
 				71CD4BAB275137190040187B /* ViewController.swift in Sources */,
+				71CD4BD027566F950040187B /* ControllerTwoCoordinator.swift in Sources */,
 				71CD4BBF27513C980040187B /* Storyboarded.swift in Sources */,
 				71CD4BC72751577B0040187B /* ViewControllerNumberOne.swift in Sources */,
 				71CD4BA7275137190040187B /* AppDelegate.swift in Sources */,

@@ -27,6 +27,10 @@ class ViewControllerNumberTwo: UIViewController {
         setupLabel()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        coordinator?.finish()
+    }
+    
     
     // MARK: - Setup
     func setupLabel() {

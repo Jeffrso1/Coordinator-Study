@@ -19,12 +19,12 @@ class ViewController: UIViewController, Storyboarded {
     //MARK: - Actions
     @IBAction func ControllerOneButton(_ sender: Any) {
         guard let coordinator = coordinator as? MainCoordinator else { return }
-        coordinator.controllerNumberOne()
+        coordinator.createControllerNumberOne()
     }
     
     @IBAction func ControllerTwoButton(_ sender: Any) {
         guard let coordinator = coordinator as? MainCoordinator else { return }
-        coordinator.controllerNumberTwo()
+        coordinator.createControllerNumberTwo()
     }
     
 }

@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewControllerNumberOne: UIViewController, Storyboarded, HasCoordinatorProtocol {
+class ViewControllerNumberOne: UIViewController, Storyboarded {
     
-    var coordinator: CoordinatorProtocol?
+    weak var coordinator: CoordinatorProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()

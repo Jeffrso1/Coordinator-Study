@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewControllerNumberTwo: UIViewController, HasCoordinatorProtocol {
+class ViewControllerNumberTwo: UIViewController {
     
-    var coordinator: CoordinatorProtocol?
+    weak var coordinator: CoordinatorProtocol?
     
     var message: UILabel = {
         let label = UILabel(frame: .zero)

@@ -16,7 +16,6 @@
 		71CD4BBC275137720040187B /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BBB275137720040187B /* CoordinatorProtocol.swift */; };
 		71CD4BBF27513C980040187B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BBE27513C980040187B /* Storyboarded.swift */; };
 		71CD4BC1275141070040187B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BC0275141070040187B /* MainCoordinator.swift */; };
-		71CD4BC3275153D70040187B /* HasCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BC2275153D70040187B /* HasCoordinatorProtocol.swift */; };
 		71CD4BC5275156180040187B /* ViewControllerNumberTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BC4275156180040187B /* ViewControllerNumberTwo.swift */; };
 		71CD4BC72751577B0040187B /* ViewControllerNumberOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD4BC62751577B0040187B /* ViewControllerNumberOne.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		71CD4BBB275137720040187B /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		71CD4BBE27513C980040187B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		71CD4BC0275141070040187B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		71CD4BC2275153D70040187B /* HasCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		71CD4BC4275156180040187B /* ViewControllerNumberTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNumberTwo.swift; sourceTree = "<group>"; };
 		71CD4BC62751577B0040187B /* ViewControllerNumberOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNumberOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +86,6 @@
 			children = (
 				71CD4BBB275137720040187B /* CoordinatorProtocol.swift */,
 				71CD4BC0275141070040187B /* MainCoordinator.swift */,
-				71CD4BC2275153D70040187B /* HasCoordinatorProtocol.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -178,7 +175,6 @@
 				71CD4BAB275137190040187B /* ViewController.swift in Sources */,
 				71CD4BBF27513C980040187B /* Storyboarded.swift in Sources */,
 				71CD4BC72751577B0040187B /* ViewControllerNumberOne.swift in Sources */,
-				71CD4BC3275153D70040187B /* HasCoordinatorProtocol.swift in Sources */,
 				71CD4BA7275137190040187B /* AppDelegate.swift in Sources */,
 				71CD4BA9275137190040187B /* SceneDelegate.swift in Sources */,
 			);

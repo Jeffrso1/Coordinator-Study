@@ -14,8 +14,4 @@ class ViewControllerNumberOne: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        coordinator?.finish()
-    }
 }

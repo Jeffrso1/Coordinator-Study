@@ -17,17 +17,10 @@ protocol CoordinatorProtocol: AnyObject {
     
     func start()
     
-    func finish()
-    
     func childDidFinish(_ coordinator: CoordinatorProtocol)
     
 }
 extension CoordinatorProtocol {
-    
-    func finish() {
-        guard let parent = parent else { return }
-        parent.childDidFinish(self)
-    }
     
     func childDidFinish(_ coordinator: CoordinatorProtocol) {
         guard var childCoordinators = childCoordinators else { return }
